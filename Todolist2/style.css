@@ -1,0 +1,193 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-top: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.notify {
+    text-align: center;
+    position: relative;
+    top: 20px;
+    display: none;
+}
+
+.notify p {
+    font-size: 14px;
+    color: rgb(160, 5, 5);
+}
+
+.container {
+    min-width: 50vw;
+    display: flex;
+    justify-content: center;
+    padding: 32px 0;
+    align-items: center;
+}
+
+form {
+    position: relative;
+    overflow: hidden;
+}
+
+.input-search {
+    background: rgba(0, 0, 0, 0);
+    min-width: 25vw;
+    height: 35px;
+    outline: none;
+    border: none;
+    padding: 0 6px;
+    font-weight: 400;
+    position: relative;
+    font-size: 15px;
+    overflow: hidden;
+    color: white;
+    border: 1px solid rgba(255, 2552, 255, 0.4);
+    line-height: 35px;
+    min-width: 300px;
+}
+
+#select {
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    border: 1px solid rgba(255, 2552, 255, 0.4);
+    outline: none;
+    height: 35px;
+}
+
+#select:focus {
+    background: rgba(0, 0, 0, 0);
+}
+
+#select  * {
+    background: rgba(0, 0, 0, 0);
+    color: black;
+}
+
+.input-btn {
+    position: absolute;
+    background: rgba(0, 0, 0, 0);
+    top: 1px;
+    right: 0;
+    height: 33px;
+    width: 35px;
+    outline: none ;
+    border: none;
+    color: white;
+    transition: all 0.5s ease;
+    line-height: 34px;
+}
+
+.input-btn:hover {
+    background-color:rgb(70, 127, 173) ;
+    color: white;
+}
+
+.input-btn i {
+    font-size: 14px;
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+}
+
+.todo-div {
+    display: flex;
+    background: rgba(0, 0, 0, 0);    
+    position: relative;
+    overflow: hidden;
+    transform: translateY(0);
+    transition: all 0.5s ease;
+}
+
+.fall {
+    transform: translateY(60px);
+    opacity: 0;
+}
+
+.todo-item {
+    list-style: none;
+    color: white;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgba(255, 2552, 255, 0.4);
+    height: 30px;
+    padding: 0 8px;
+    line-height: 30px;
+    min-width: 226px;
+}
+
+.todo-div button {
+    top: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0);
+    outline: none;
+    border: none;
+    height: 30px;
+    width: 30px;
+    border: 1px solid rgba(255, 2552, 255, 0.4);
+    cursor: pointer;
+
+}
+
+.todo-div button:hover i{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.todo-div button i {
+    color: white;
+    line-height: 30px;
+    transition: all 0.5s ease;
+}
+
+.ti-pencil-alt, .ti-check-box, .ti-trash {
+    pointer-events: none;
+}
+
+.completed {
+    color: white;
+    text-decoration: line-through;
+}
+
+.blur {
+    opacity: 0.5;
+}
+
+.clear-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 0 32px;
+}
+
+.clear-container button {
+    background: rgba(0, 0, 0, 0);
+    color: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 2552, 255, 0.4);
+    outline: none;
+    min-width: 72px;
+    min-height: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.6s ease;
+}
+
+.clear-container button:hover {
+    background-color:rgb(70, 127, 173) ;
+    color: white;
+}
